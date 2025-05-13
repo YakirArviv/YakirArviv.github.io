@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yakir Arviv</title>
+    <link rel="icon" href="/resources/page-logo.ico" type="image/x-icon" />
+    <script src="formScript.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!-- Connecting to EmailJS Script -->
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Swc7Xm7gywrU1aDZs");
+      })();
+    </script>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <!-- IonIcons Link -->
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Website Menu -->
+    <header style="position: fixed; width: 100%; background-color: #fff">
+      <nav
+        style="
+          width: 100%;
+          height: 8vh;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          border: 1px solid rgba(128, 128, 128, 0.36);
+        "
+      >
+        <img
+          src="/resources/logo.png"
+          alt="logo"
+          style="height: 100%; width: auto; margin-left: 7vh"
+        />
+        <div style="margin-right: 4vh">
+          <a href="/home.html" id="menu-link">Home</a>
+          <a href="/resume.html" id="menu-link">My Resume</a>
+          <a href="/ticTacToe.html" id="menu-link">Tic Tac Toe</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Website Sections -->
+    <section class="intro-section" style="padding-top: 8vh">
+      <div id="intro-section-container">
+        <aside id="intro-section-image-aside">
+          <img src="/resources/yakir.jpg" alt="profile" style="width: 200px" />
+          <nav id="intro-section-links-nav">
+            <a href="https://github.com/YakirArviv" target="_blank">
+              <span
+                id="nav-icon-container"
+                style="background-color: rgb(115, 115, 115)"
+              >
+                <ion-icon name="logo-github" id="nav-icon"></ion-icon>
+              </span>
+            </a>
+            <a
+              href="https://www.facebook.com/share/14yrpgHGGLE/?mibextid=wwXIfr"
+              target="_blank"
+            >
+              <span
+                id="nav-icon-container"
+                style="background-color: rgb(65, 55, 255)"
+              >
+                <ion-icon name="logo-facebook" id="nav-icon"></ion-icon>
+              </span>
+            </a>
+            <a
+              href="https://www.instagram.com/yakir.arviv?utm_source=qr&igsh=MnM3ZGlscW4zNDg0"
+              target="_blank"
+            >
+              <span
+                id="nav-icon-container"
+                style="background-color: rgb(255, 61, 109)"
+              >
+                <ion-icon name="logo-instagram" id="nav-icon"></ion-icon>
+              </span>
+            </a>
+          </nav>
+        </aside>
+        <aside id="intro-article-aside">
+          <article>
+            <h1>Welcome to Yakir Arviv's Portfolio</h1>
+            <h3>QA Tester</h3>
+            <p>
+              Hello! My name is Yakir Arviv, a passionate and dedicated
+              professional with a diverse background in customer service and
+              quality assurance. At 25 years old, I bring a unique blend of
+              experience that shapes my approach to work and problem-solving.
+            </p>
+            <a
+              href="resume.html"
+              target="iframe_a"
+              style="text-decoration: none"
+            >
+              <button class="btn btn-primary">My Resume</button>
+            </a>
+            <a
+              href="/ticTacToe.html"
+              target="iframe_a"
+              style="text-decoration: none"
+              ><button class="btn btn-secondary">My Tic Tac Toe Game</button></a
+            >
+          </article>
+        </aside>
+      </div>
+    </section>
+    <section class="about-me-section">
+      <aside class="about-me-section-article">
+        <article>
+          <h1>My Roots</h1>
+          <p>
+            I was born and raised in the vibrant city of Tel Aviv, a place that
+            shaped much of who I am today. Growing up in a culturally rich and
+            fast-paced environment taught me adaptability, resilience, and an
+            appreciation for diversity. I attended Holtz High School, where I
+            developed a strong foundation in technical subjects and learned the
+            value of hard work and discipline.
+          </p>
+        </article>
+      </aside>
+      <aside class="about-me-section-img">
+        <img src="/resources/tlv.png" alt="tlv" />
+      </aside>
+    </section>
+    <section class="about-me-section">
+      <aside class="about-me-section-img">
+        <img src="/resources/waiter.png" alt="tlv" />
+      </aside>
+      <aside class="about-me-section-article">
+        <article>
+          <h1>My Early Journey</h1>
+          <p>
+            My professional journey started in the hospitality industry, where I
+            worked as a waiter. This role helped me master the art of
+            communication and customer service. I quickly learned how to manage
+            stress, multitask efficiently, and ensure guests left with a smile.
+            These skills became the backbone of my professional behavior in
+            every role that followed.
+          </p>
+        </article>
+      </aside>
+    </section>
+    <section class="about-me-section">
+      <aside class="about-me-section-article">
+        <article>
+          <h1>From Service to Software</h1>
+          <p>
+            In recent years, I transitioned into the tech world, pursuing a
+            career in Quality Assurance. I completed a QA course at IPC and
+            began working as a Manual QA Engineer in a startup. I’m passionate
+            about ensuring software is reliable and user-friendly. Every bug I
+            find and every test I run is part of building something better—for
+            users, teams, and the future.
+          </p>
+        </article>
+      </aside>
+      <aside class="about-me-section-img">
+        <img src="/resources/developer.png" alt="tlv" />
+      </aside>
+    </section>
+    <section class="skills-section">
+      <div class="skills-section-article-container">
+        <article>
+          <br />
+          <h1 style="color: white">My Skills</h1>
+          <h3 style="color: white">
+            Bridging Technology and Human Interaction
+          </h3>
+          <p style="color: white">
+            I believe that a great professional combines both technical
+            precision and human understanding. With a foundation in quality
+            assurance and real-world experience in customer-facing roles, my
+            skill set helps me not only detect issues but also communicate
+            solutions effectively. Below you'll find a breakdown of my core
+            technical and soft skills that drive my day-to-day success.
+          </p>
+        </article>
+        <br />
+      </div>
+      <div class="skills-div">
+        <div class="container">
+          <div>
+            <ion-icon
+              name="search"
+              style="
+                color: white;
+                font-size: 7vh;
+                padding: 4vh;
+                margin-top: 3vh;
+                background-color: #ffffff25;
+                border-radius: 50%;
+              "
+            ></ion-icon>
+            <h3 style="color: white">Manual Quality Assurance (QA)</h3>
+            <p style="color: white">
+              Proficient in identifying, documenting, and tracking bugs to
+              improve software performance and reliability.
+            </p>
+          </div>
+
+          <div>
+            <ion-icon
+              name="clipboard"
+              style="
+                color: white;
+                font-size: 7vh;
+                padding: 4vh;
+                margin-top: 3vh;
+                background-color: #ffffff25;
+                border-radius: 50%;
+              "
+            ></ion-icon>
+            <h3 style="color: white">Test Case Design & Execution</h3>
+            <p style="color: white">
+              Skilled in writing effective test cases, executing tests
+              systematically, and reporting findings with clarity.
+            </p>
+          </div>
+
+          <div>
+            <ion-icon
+              name="build"
+              style="
+                color: white;
+                font-size: 7vh;
+                padding: 4vh;
+                margin-top: 3vh;
+                background-color: #ffffff25;
+                border-radius: 50%;
+              "
+            ></ion-icon>
+            <h3 style="color: white">Basic Automation Testing</h3>
+            <p style="color: white">
+              Familiar with the principles and tools of automation, providing a
+              solid foundation for more advanced testing environments.
+            </p>
+          </div>
+
+          <div>
+            <ion-icon
+              name="bug"
+              style="
+                color: white;
+                font-size: 7vh;
+                padding: 4vh;
+                margin-top: 3vh;
+                background-color: #ffffff25;
+                border-radius: 50%;
+              "
+            ></ion-icon>
+            <h3 style="color: white">Bug Tracking & Reporting Tools</h3>
+            <p style="color: white">
+              Comfortable using platforms like Jira and Trello to manage test
+              cycles and communicate issues with developers.
+            </p>
+          </div>
+
+          <div>
+            <ion-icon
+              name="body"
+              style="
+                color: white;
+                font-size: 7vh;
+                padding: 4vh;
+                margin-top: 3vh;
+                background-color: #ffffff25;
+                border-radius: 50%;
+              "
+            ></ion-icon>
+            <h3 style="color: white">Excellent Communication</h3>
+            <p style="color: white">
+              Able to convey complex information clearly, whether working with
+              developers, clients, or team members.
+            </p>
+          </div>
+
+          <div>
+            <ion-icon
+              name="calendar"
+              style="
+                color: white;
+                font-size: 7vh;
+                padding: 4vh;
+                margin-top: 3vh;
+                background-color: #ffffff25;
+                border-radius: 50%;
+              "
+            ></ion-icon>
+            <h3 style="color: white">Strong Organizational Skills</h3>
+            <p style="color: white">
+              Manage tasks efficiently, prioritize work under tight deadlines,
+              and maintain a high standard of accuracy.
+            </p>
+          </div>
+
+          <div>
+            <ion-icon
+              name="hammer"
+              style="
+                color: white;
+                font-size: 7vh;
+                padding: 4vh;
+                margin-top: 3vh;
+                background-color: #ffffff25;
+                border-radius: 50%;
+              "
+            ></ion-icon>
+            <h3 style="color: white">Problem Solving Under Pressure</h3>
+            <p style="color: white">
+              Thrive in fast-paced environments, calmly identifying and
+              resolving issues even in high-stress scenarios.
+            </p>
+          </div>
+
+          <div>
+            <ion-icon
+              name="people"
+              style="
+                color: white;
+                font-size: 7vh;
+                padding: 4vh;
+                margin-top: 3vh;
+                background-color: #ffffff25;
+                border-radius: 50%;
+              "
+            ></ion-icon>
+            <h3 style="color: white">Team Collaboration</h3>
+            <p style="color: white">
+              Value working in diverse teams, contributing positively to group
+              dynamics and shared success.
+            </p>
+          </div>
+
+          <div>
+            <ion-icon
+              name="eye"
+              style="
+                color: white;
+                font-size: 7vh;
+                padding: 4vh;
+                margin-top: 3vh;
+                background-color: #ffffff25;
+                border-radius: 50%;
+              "
+            ></ion-icon>
+            <h3 style="color: white">Attention to Detail</h3>
+            <p style="color: white">
+              Maintain a sharp focus on every aspect of testing and
+              documentation to ensure no issue goes unnoticed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="education-section">
+      <article style="text-align: center">
+        <h1>Education</h1>
+        <h3>Lifelong Learning for Technical Excellence</h3>
+        <p>
+          Education has been the foundation of my growth as a professional. From
+          high school through hands-on training programs and self-paced
+          learning, I’ve consistently invested in gaining the skills and
+          knowledge that help me thrive in the QA and tech field.
+        </p>
+      </article>
+      <div class="skills-div" style="background-color: #1900ff37">
+        <div class="container">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              background-color: #fff;
+            "
+          >
+            <h1 style="font-size: x-large">High School Diploma</h1>
+            <h3 style="font-size: large">Holtz High School, Tel Aviv</h3>
+
+            <span
+              style="
+                background-color: #ffae00;
+                color: white;
+                width: 100%;
+                border-radius: 2vh;
+                padding: 1vh;
+                width: 80%;
+              "
+              >2011 – 2015</span
+            >
+            <p>
+              Graduated with a strong technical foundation, focusing on
+              engineering principles, teamwork, and structured problem-solving.
+            </p>
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              background-color: #fff;
+            "
+          >
+            <h1 style="font-size: x-large">Quality Assurance Certification</h1>
+            <h3 style="font-size: large">IPC College, Tel Aviv</h3>
+
+            <span
+              style="
+                background-color: #ffae00;
+                color: white;
+                width: 100%;
+                border-radius: 2vh;
+                padding: 1vh;
+                width: 80%;
+              "
+              >2022</span
+            >
+            <p>
+              Completed a hands-on QA course covering manual testing, automation
+              fundamentals, bug tracking, and tools like Jira.
+            </p>
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              background-color: #fff;
+            "
+          >
+            <h1 style="font-size: x-large">Introduction to Web Development</h1>
+            <h3 style="font-size: large">freeCodeCamp (Online)</h3>
+
+            <span
+              style="
+                background-color: #ffae00;
+                color: white;
+                width: 100%;
+                border-radius: 2vh;
+                padding: 1vh;
+                width: 80%;
+              "
+              >2024 -2025</span
+            >
+            <p>
+              Learned the essentials of HTML, CSS, and JavaScript through
+              self-paced modules, gaining practical front-end testing insights.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-me">
+      <aside>
+        <article>
+          <h1 style="text-align: left; width: fit-content">Get in Touch!</h1>
+          <p>
+            Whether you have a question, feedback, or just want to connect, feel
+            free to reach out. I’m always open to discussing new opportunities,
+            projects, or collaborations.
+          </p>
+          <img src="/resources/contact.png" alt="contact img" />
+        </article>
+      </aside>
+      <aside style="background-color: rgba(176, 176, 176, 0.047)">
+        <div class="form-container">
+          <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your full name"
+            />
+
+            <label for="email">Your Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email address"
+            />
+
+            <label for="subject">Subject:</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              placeholder="Enter the subject"
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Write your message here"
+            ></textarea>
+            <br />
+            <button
+              type="submit"
+              class="btn btn-primary"
+              onclick="sendMail(event)"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </aside>
+    </section>
+    <!-- Website Footer -->
+    <footer>
+      <img
+        src="/resources/page-logo.png"
+        alt="logo"
+        style="height: 100%; width: auto; margin-left: 5vh"
+      />
+      <p style="color: white">© 2025 Yakir Arviv. All rights reserved.</p>
+      <nav style="display: flex; align-items: center; justify-content: center">
+        <nav id="intro-section-links-nav">
+          <a href="https://github.com/YakirArviv" target="_blank">
+            <span
+              id="nav-icon-container"
+              style="background-color: rgb(115, 115, 115)"
+            >
+              <ion-icon name="logo-github" id="nav-icon"></ion-icon>
+            </span>
+          </a>
+          <a
+            href="https://www.facebook.com/share/14yrpgHGGLE/?mibextid=wwXIfr"
+            target="_blank"
+          >
+            <span
+              id="nav-icon-container"
+              style="background-color: rgb(65, 55, 255)"
+            >
+              <ion-icon name="logo-facebook" id="nav-icon"></ion-icon>
+            </span>
+          </a>
+          <a
+            href="https://www.instagram.com/yakir.arviv?utm_source=qr&igsh=MnM3ZGlscW4zNDg0"
+            target="_blank"
+          >
+            <span
+              id="nav-icon-container"
+              style="background-color: rgb(255, 61, 109)"
+            >
+              <ion-icon name="logo-instagram" id="nav-icon"></ion-icon>
+            </span>
+          </a>
+        </nav>
+      </nav>
+    </footer>
+  </body>
+</html>

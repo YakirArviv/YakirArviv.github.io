@@ -1,0 +1,35 @@
+.resume-container {
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resume {
+  width: 50%;
+  height: fit-content;
+  margin-top: 8vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#contact-info-div {
+  width: 100%;
+  margin-top: 0.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resume-content {
+  padding: 4vh;
+}
+
+#list-item-div {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  margin-bottom: -3vh;
+  margin-top: -2vh;
+}
